@@ -79,7 +79,7 @@ public class MainManager : MonoBehaviour
         m_GameOver = true;
         GameOverObj.SetActive(true);
 
-        bool isNewHighScore = save.CheckHighScore(m_Points);
+        bool isNewHighScore = save.CompareHighScore(m_Points);
 
         if (isNewHighScore)
         {
